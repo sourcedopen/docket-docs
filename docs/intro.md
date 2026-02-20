@@ -2,46 +2,39 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**Open Docket** is a ticket management system designed for tracking complaints, grievances, and support workflows. Whether you're managing regulatory filings, consumer complaints, or internal support requests, Open Docket gives you a structured, auditable way to handle every issue from intake to resolution.
 
-## Getting Started
+## Who Is It For?
 
-Get started by **creating a new site**.
+Open Docket is built for teams and individuals who need to:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- Log and track complaints or service requests on behalf of others
+- Monitor deadlines and SLAs across multiple ticket types
+- Maintain a clear, auditable trail of all actions taken
 
-### What you'll need
+## Feature Overview
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+| Feature | Description |
+|---|---|
+| **Tickets** | Create and manage trackable issues with reference numbers, statuses, priorities, and due dates |
+| **Ticket Types** | Define categories with custom SLA days, icons, colors, and custom field schemas |
+| **Contacts** | Store parties involved in complaints — authorities, companies, departments, or individuals |
+| **Tags** | Colour-coded labels to organise and filter tickets and contacts |
+| **Reminders** | Date-based alerts with recurring options; deadline reminders auto-created from due dates |
+| **Documents** | Attach files to tickets, contacts, and comments (20 MB max per file) |
+| **Comments & Timeline** | Structured comment types (Update, Note, Response, Escalation, Resolution) merged with activity history |
+| **Activity Log** | Automatic audit trail of every create, update, and delete across the system |
 
-## Generate a new site
+## Quick Navigation
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- [Logging In](getting-started/logging-in.md) — Access the application
+- [Dashboard](getting-started/dashboard.md) — Understand your at-a-glance overview
+- [Tickets](tickets/overview.md) — Core workflow for managing issues
+- [Ticket Types](ticket-types/overview.md) — Configure categories and custom fields
+- [Contacts](contacts/overview.md) — Manage parties involved in tickets
+- [Tags](tags/using-tags.md) — Organise with colour-coded labels
+- [Reminders](reminders/managing-reminders.md) — Set and receive alerts
+- [Documents](documents/attaching-documents.md) — Attach files
+- [Activity Log](activity-log/audit-trail.md) — Full audit trail
