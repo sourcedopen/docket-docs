@@ -15,7 +15,7 @@ Four summary cards appear at the top of the dashboard:
 | **Open Tickets** | Total tickets that are not closed. Clicking the card takes you to a filtered ticket list. |
 | **Overdue** | Tickets past their due date that are not closed. Shown with a red badge when the count is greater than zero. |
 | **Due This Week** | Tickets with a due date within the next 7 days. Shown with a yellow badge when the count is greater than zero. |
-| **Closed (30d)** | Tickets closed within the last 30 days. |
+| **Closed (30d)** | Tickets resolved or closed within the last 30 days. |
 
 Each card links directly to a filtered ticket list view.
 

@@ -24,6 +24,7 @@ Open Docket is built for teams and individuals who need to:
 | **Tags** | Colour-coded labels to organise and filter tickets and contacts |
 | **Reminders** | Date-based alerts with recurring options; deadline reminders auto-created from due dates |
 | **Documents** | Attach files to tickets, contacts, and comments (20 MB max per file) |
+| **Costs** | Track expenses associated with a ticket — filing fees, postage, legal costs — with a running total |
 | **Comments & Timeline** | Structured comment types (Update, Note, Response, Escalation, Resolution) merged with activity history |
 | **Activity Log** | Automatic audit trail of every create, update, and delete across the system |
 
@@ -37,4 +38,5 @@ Open Docket is built for teams and individuals who need to:
 - [Tags](tags/using-tags.md) — Organise with colour-coded labels
 - [Reminders](reminders/managing-reminders.md) — Set and receive alerts
 - [Documents](documents/attaching-documents.md) — Attach files
+- [Costs](costs/tracking-costs.md) — Track expenses per ticket
 - [Activity Log](activity-log/audit-trail.md) — Full audit trail

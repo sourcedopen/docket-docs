@@ -24,6 +24,7 @@ sidebar_position: 2
 | **Tags** | See below. |
 | **Description** | Full details of the issue. |
 | **Custom Fields** | Fields defined by the selected ticket type (if any). |
+| **Initial Cost** | Optional. Toggle "Add initial cost" to record a filing fee or other upfront expense with the ticket. Fields: Amount, Incurred At, Description. |
 | **Documents** | File attachments. See below. |
 
 ### Adding Tags

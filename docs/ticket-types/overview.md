@@ -26,7 +26,8 @@ Open Docket ships with the following pre-configured ticket types:
 | Type | Default SLA |
 |---|---|
 | RTI Application | 30 days |
-| DND Complaint | 7 days |
+| First Appeal (RTI) | 45 days |
+| DND Complaint (TRAI) | 7 days |
 | Consumer Complaint | 45 days |
 | Banking Ombudsman | 30 days |
 | Insurance Complaint | 15 days |

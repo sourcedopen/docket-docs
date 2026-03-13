@@ -14,6 +14,7 @@ The following record types generate activity log entries:
 - Contacts
 - Comments
 - Reminders
+- Costs
 - Ticket Types
 
 ## Where to View Activity

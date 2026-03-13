@@ -26,7 +26,7 @@ You can add your own reminders from the Reminders tab. Click **Add Reminder** an
 |---|---|
 | **Title** | Required. A short description of what to do. |
 | **Remind At** | Required. The date and time for the reminder. |
-| **Type** | Choose: **Follow-Up** or **Custom** |
+| **Type** | Choose: **Deadline Approaching**, **Follow-Up**, or **Custom** |
 | **Notes** | Optional. Additional context. |
 
 ## Recurring Reminders

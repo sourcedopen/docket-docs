@@ -24,6 +24,7 @@ Custom field schemas are stored as JSON in the ticket type's `schema_definition`
 | Type | Description |
 |---|---|
 | `text` | Single-line text input |
+| `string` | Alias for `text` — single-line text input |
 | `number` | Numeric input |
 | `date` | Date picker |
 | `textarea` | Multi-line text input |
@@ -37,7 +38,7 @@ Each field in the `fields` array can have the following properties:
 |---|---|---|
 | `key` | Yes | Internal storage key; must be unique within the schema |
 | `label` | Yes | Display name shown on the form |
-| `type` | Yes | One of: `text`, `number`, `date`, `textarea`, `select` |
+| `type` | Yes | One of: `text`, `string`, `number`, `date`, `textarea`, `select` |
 | `required` | No | `true` if the field must be filled in |
 | `options` | For `select` only | Array of strings listing the available choices |
 
@@ -63,13 +64,13 @@ Required custom fields are validated on both ticket creation and updates. Submit
     {
       "key": "pio_name",
       "label": "PIO Name",
-      "type": "text",
+      "type": "string",
       "required": true
     },
     {
-      "key": "fee_paid",
-      "label": "Fee Paid",
-      "type": "number",
+      "key": "department",
+      "label": "Department",
+      "type": "string",
       "required": false
     },
     {
@@ -77,7 +78,12 @@ Required custom fields are validated on both ticket creation and updates. Submit
       "label": "Mode of Filing",
       "type": "select",
       "required": true,
-      "options": ["Online", "Post", "In Person"]
+      "options": ["online_portal", "speed_post", "in_person"]
+    },
+    {
+      "key": "first_appeal_deadline",
+      "label": "First Appeal Deadline",
+      "type": "date"
     }
   ]
 }

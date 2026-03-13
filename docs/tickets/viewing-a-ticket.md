@@ -50,3 +50,7 @@ See [Comments & Timeline](../comments-and-timeline/adding-comments.md) for detai
 ## Reminders Tab
 
 The Reminders tab shows all reminders associated with this ticket and provides a form to add new ones. See [Managing Reminders](../reminders/managing-reminders.md).
+
+## Costs Tab
+
+The Costs tab shows all expenses recorded against this ticket. A summary card at the top displays the **total cost** across all entries. Each cost entry shows its amount, date, description, and the user who added it. You can add, edit, and delete costs directly from this tab. See [Tracking Costs](../costs/tracking-costs.md).
