@@ -29,6 +29,8 @@ The [Dashboard](../getting-started/dashboard.md) shows the last 10 activity entr
 
 ### 3. Activity Page (`/activity`)
 
+![Activity Log](/img/screenshots/activity-index.png)
+
 The full activity log is available at `/activity`. This page shows:
 
 - All events in the system

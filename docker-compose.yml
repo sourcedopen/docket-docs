@@ -1,0 +1,123 @@
+# Reference Docker Compose for Open Docket
+# Adjust environment variables and remove optional services as needed.
+
+services:
+  app:
+    image: ghcr.io/sourcedopen/docket:latest
+    container_name: docket
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      APP_NAME: "Open Docket"
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_KEY: "" # Generate with: docker run --rm ghcr.io/sourcedopen/docket php artisan key:generate --show
+      APP_URL: http://localhost:8000
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_DATABASE: docket
+      DB_USERNAME: docket
+      DB_PASSWORD: secret
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      QUEUE_CONNECTION: redis
+      CACHE_STORE: redis
+      SESSION_DRIVER: redis
+      FILESYSTEM_DISK: local
+      MEDIA_DISK: s3 # Change to "local" if not using S3/MinIO
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_BUCKET: docket
+      AWS_ENDPOINT: http://minio:9000
+      AWS_URL: http://localhost:9000/docket
+      AWS_USE_PATH_STYLE_ENDPOINT: "true"
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - app-storage:/var/www/html/storage
+
+  mysql:
+    image: mysql:8
+    container_name: docket-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: docket
+      MYSQL_USER: docket
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Optional: Remove this service if using an external database.
+  # To use PostgreSQL instead, replace the mysql service with:
+  #
+  # postgres:
+  #   image: postgres:16
+  #   container_name: docket-postgres
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_DB: docket
+  #     POSTGRES_USER: docket
+  #     POSTGRES_PASSWORD: secret
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U docket"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+  #
+  # Then update the app service:
+  #   DB_CONNECTION: pgsql
+  #   DB_HOST: postgres
+  #   DB_PORT: "5432"
+
+  redis:
+    image: redis:7-alpine
+    container_name: docket-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Optional: S3-compatible object storage. Remove if using local storage or an external S3 provider.
+  minio:
+    image: minio/minio
+    container_name: docket-minio
+    restart: unless-stopped
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "9000:9000"
+      - "9001:9001" # MinIO console
+    volumes:
+      - minio-data:/data
+
+volumes:
+  app-storage:
+  mysql-data:
+  redis-data:
+  minio-data:

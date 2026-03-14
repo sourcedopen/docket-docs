@@ -6,6 +6,8 @@ sidebar_position: 6
 
 The ticket list page includes a filter bar and a search box to help you find specific tickets quickly.
 
+![Ticket Filters](/img/screenshots/tickets-index.png)
+
 ## Filter Bar
 
 | Filter | Options |

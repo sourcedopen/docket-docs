@@ -8,7 +8,12 @@ sidebar_position: 2
 
 1. In the navigation, go to **Tickets** → **New Ticket**.
 2. On the type selection screen, click the card for the **ticket type** you want to use. Only active ticket types are shown.
+
+![Ticket Type Selection](/img/screenshots/ticket-create.png)
+
 3. Complete the ticket form:
+
+![Ticket Creation Form](/img/screenshots/ticket-create-form.png)
 
 ### Form Fields
 

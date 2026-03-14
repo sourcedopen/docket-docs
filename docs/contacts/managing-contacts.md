@@ -16,6 +16,8 @@ Tags on contacts work the same as on tickets — type a tag name and press Enter
 
 On any contact's detail page, you can see a paginated list of all tickets that have been filed with that contact. Each entry links directly to the ticket.
 
+![Contact Detail](/img/screenshots/contact-show.png)
+
 ## Deleting a Contact
 
 Contacts are **soft deleted**. When a contact is deleted:

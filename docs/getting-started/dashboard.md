@@ -6,6 +6,8 @@ sidebar_position: 2
 
 The dashboard gives you an at-a-glance view of the current state of your tickets, upcoming reminders, and recent activity.
 
+![Dashboard](/img/screenshots/dashboard.png)
+
 ## Stat Cards
 
 Four summary cards appear at the top of the dashboard:

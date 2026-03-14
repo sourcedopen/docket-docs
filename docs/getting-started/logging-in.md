@@ -10,6 +10,8 @@ sidebar_position: 1
 2. On the login page, enter your **email address** and **password**.
 3. Click **Log In**.
 
+![Login Page](/img/screenshots/login.png)
+
 You will be redirected to your [Dashboard](dashboard.md) upon successful authentication.
 
 ## Forgot Your Password?

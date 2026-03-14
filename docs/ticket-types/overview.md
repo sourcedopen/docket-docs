@@ -6,6 +6,8 @@ sidebar_position: 1
 
 **Ticket types** categorise tickets and define their default behaviour: how long resolution should take (SLA), what custom fields are collected, and how the type is visually identified.
 
+![Ticket Types](/img/screenshots/ticket-types-index.png)
+
 ## Type Properties
 
 | Property | Description |

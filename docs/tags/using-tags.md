@@ -6,6 +6,8 @@ sidebar_position: 1
 
 Tags are colour-coded labels you can attach to tickets and contacts to help with organisation and filtering.
 
+![Tags Page](/img/screenshots/tags-index.png)
+
 ## Tags Page
 
 Navigate to **Tags** in the main navigation to see all tags. Each tag is shown with:

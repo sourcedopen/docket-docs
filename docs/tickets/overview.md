@@ -6,6 +6,8 @@ sidebar_position: 1
 
 A **ticket** is a single trackable issue, complaint, or request. Each ticket moves through a defined status workflow from creation to closure, with a full audit trail of every change.
 
+![Tickets List](/img/screenshots/tickets-index.png)
+
 ## Reference Number
 
 Every ticket is assigned a unique reference number in the format `TKT-YYYY-NNNN`, where `YYYY` is the year and `NNNN` is a zero-padded sequence number that resets each year. This reference is auto-generated on creation and cannot be changed.

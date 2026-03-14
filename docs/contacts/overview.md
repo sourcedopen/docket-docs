@@ -6,6 +6,8 @@ sidebar_position: 1
 
 **Contacts** represent the parties involved in tickets — the organisations, departments, or individuals that complaints are filed with or against.
 
+![Contacts List](/img/screenshots/contacts-index.png)
+
 ## Contact Types
 
 | Type | Use For |

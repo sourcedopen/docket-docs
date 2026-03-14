@@ -6,6 +6,8 @@ sidebar_position: 3
 
 Open a ticket from the ticket list to see its full detail page.
 
+![Ticket Detail](/img/screenshots/ticket-show.png)
+
 ## Header
 
 The top of the page shows:
